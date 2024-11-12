@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            background: #ff0000;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+        #verify {
+            cursor: pointer;
+            background: #a72828;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        #verify:hover {
+            background: #ff0000;
+        }
+        #result {
+            font-weight: bold;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="passport.html">Считать данные</a></li>
+            <li><a href="latin.html">Изменить на латиницу</a></li>
+            <li><a href="algorithm.html">Алгоритмическая задача</a></li>
+            <li><a href="form.html">Форма</a></li>
+        </ul>
+    </nav>
+    <h3 align="center">Решение алгоритмической задачи</h3>
+    <p id="task_content">Дано число X. Определить, принадлежит ли это число заданному промежутку [a, b]</p>
+    <p>Значение X: <span id="x">5</span></p>
+    <p>Значение a: <span id="a">1</span></p>
+    <p>Значение b: <span id="b">10</span></p>
+    <p id="verify">Оценить</p>
+
+    <p>Результат: <span id="result"></span></p>
+
+</body>
+<script src="algorithm.js"></script>
+</html>
