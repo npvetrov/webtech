@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        nav {
+            margin-bottom: 20px;
+            background: #28a745;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .passport-info {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .passport-photo {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="passport.html">Считать данные</a></li>
+            <li><a href="latin.html">Изменить на латиницу</a></li>
+            <li><a href="algorithm.html">Алгоритмическая задача</a></li>
+            <li><a href="form.html">Форма</a></li>
+        </ul>
+    </nav>
+
+    <h1 align="center">Изменение данных паспорта</h1>
+    <img src="image/passport.jpg" alt="Фотография паспорта" class="passport-photo">
+    <div class="passport-info">
+        <p>Фамилия: <span id="surname">Ветров</span></p>
+        <p>Имя: <span id="name">Никита</span></p>
+        <p>Отчество: <span id="patronymic">Павлович</span></p>
+        <p>Дата рождения: <span id="birthdate">15.06.2006</span></p>
+    </div>
+</body>
+<script>
+    let old_name_innerText = document.getElementById("surname").innerText
+    console.log("Старое имя: ", old_name_innerText)
+    let new_name = "Vetrov"
+    console.log("Новое имя: ", new_name)
+    let old_name_node = document.getElementById("surname")
+    old_name_node.innerText = new_name
+
+    old_name_innerText = document.getElementById("name").innerText
+    console.log("Старое имя: ", old_name_innerText)
+    new_name = "Nikita"
+    console.log("Новое имя: ", new_name)
+    old_name_node = document.getElementById("name")
+    old_name_node.innerText = new_name
+
+    old_name_innerText = document.getElementById("patronymic").innerText
+    console.log("Старое имя: ", old_name_innerText)
+    new_name = "Pavlovich"
+    console.log("Новое имя: ", new_name)
+    old_name_node = document.getElementById("patronymic")
+    old_name_node.innerText = new_name
+</script>
+
+</html>
