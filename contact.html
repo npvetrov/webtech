@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="destinations.html">Популярные направления</a></li>
+                <li><a href="exotic.html">Экзотические направления</a></li>
+                <li><a href="https://www.booking.com" target="_blank">Бронирование</a></li>
+                <li><a href="index.html#gallery">Галерея</a></li>
+                <li>
+                    <a href="contact.html">
+                        <img src="image/logo.jpg" alt="Лого" width="80" height="80" title="Контакты" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 align="center">Формы для отправки данных</h1>
+
+        <!-- Форма для отправки личных контактных данных -->
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <h2>Личные контактные данные</h2>
+            <input type="hidden" name="q" placeholder="Для поисковика" required value="search">
+            <input type="text" name="last_name" placeholder="Фамилия" required>
+            <input type="text" name="first_name" placeholder="Имя" required>
+            <input type="text" name="group" placeholder="Группа" required>
+            <input type="number" name="mobile_phone" placeholder="Мобильный телефон" required>
+            <input type="email" name="email" placeholder="Электронная почта" required>
+            <input type="date" name="submission_date" required>
+            <input type="hidden" name="form_type" value="contact_form">
+            <button type="submit">Отправить контактные данные</button>
+        </form>
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <h2>Оригинальные данные</h2>
+
+            <input type="hidden" name="q" placeholder="Для поисковика" required value="search">
+
+            <input type="text" name="text" placeholder="Название заказа" required value="Название заказа по умолчанию">
+
+            <input type="number" name="number" placeholder="Продолжительность подписки" required min="1" value="1">
+
+            <textarea name="textarea" placeholder="Дополнительная информация" rows="4" required>Лучший сайт</textarea>
+
+            <label>Оцените наш сайт:</label>
+            <input type="radio" name="radio" value="excellent" required checked> Отлично
+            <input type="radio" name="radio" value="good"> Хорошо
+            <input type="radio" name="radio" value="average"> Средне
+            <input type="radio" name="radio" value="poor"> Плохо
+
+            <label>Подписаться на рассылку:</label>
+            <input type="checkbox" name="checkbox" value="yes" checked> Да, я хочу получать новости
+
+            <input type="date" name="date" required value="2024-11-13"> <!-- Пример даты по умолчанию -->
+
+            <input type="password" name="password" placeholder="Пароль" required value="Пароль123">
+
+            <input type="hidden" name="hidden" placeholder="Спрятано" required value="true">
+
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Путешествия по миру. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
