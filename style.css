@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Светлый фон для контраста */
+    color: #333;
+}
+
+header {
+    background: #890835;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для заголовка */
+}
+
+.site-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 5px;
+    color: #890835; /* Цвет теглайна */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, background 0.3s; /* Плавный переход для цвета и фона */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: #890835;
+    background: #000000; /* Цвет и фон при наведении */
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff; /* Белый фон для контента */
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #890835; /* Цвет заголовков */
+}
+
+h2 {
+    margin-top: 20px;
+    border-bottom: 2px solid #000000; /* Подчеркивание заголовков */
+    padding-bottom: 5px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+img {
+    border-radius: 8px;
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #890835; /* Цвет подвала */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Тень для подвала */
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s; /* Плавный переход для рамки */
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+    border-color: #890835; /* Цвет рамки при фокусе */
+    outline: none;
+}
+
+form input[type="submit"] {
+    background: #890835; /* Цвет кнопки отправки */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #a63b5e; /* Цвет кнопки при наведении */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px; /* Округлые углы для таблицы */
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #890835; /* Цвет заголовков таблицы */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Чередование цветов строк */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Цвет строки при наведении */
+}
