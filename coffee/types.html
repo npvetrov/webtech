@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды кофе - Мир Кофе</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> <!-- Keep your custom CSS -->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">  <!-- Changed bg to dark -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/coffee-cup.jpg" alt="Мир Кофе" width="40" height="40" class="d-inline-block align-text-top" /> Мир Кофе
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="types.html">ВИДЫ КОФЕ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">РЕЦЕПТЫ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">МАГАЗИН</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">КОНТАКТЫ</a>  <!-- Active class for contact page -->
+                    </li>
+                    <li class="nav-item">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%84%D0%B5">
+                                <img src="images/coffee-cup.jpg" alt="Кофе" width="80" height="80" title="Кофе" />
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container"> <!-- Content within Bootstrap container -->
+        <h1 class="mt-4">Виды кофе</h1>
+
+        <nav class="inner-nav">
+            <ul class="nav nav-pills justify-content-center mb-3">
+                <li class="nav-item"><a class="nav-link" href="#arabica">Арабика</a></li>
+                <li class="nav-item"><a class="nav-link" href="#robusta">Робуста</a></li>
+                <li class="nav-item"><a class="nav-link" href="#liberica">Либерика</a></li>
+                <li class="nav-item"><a class="nav-link" href="#excelsa">Эксельса</a></li>
+                <li class="nav-item"><a class="nav-link" href="#top">К началу страницы</a></li>
+            </ul>
+        </nav>
+
+        <section id="arabica" class="mt-4"> <!-- Add spacing -->
+            <h2>Арабика</h2>
+            <img src="images/arabica-beans.jpg" alt="Зерна арабики" class="img-fluid mb-3">
+            <!-- Bootstrap responsive image -->
+            <p>Арабика – самый популярный вид кофе в мире, составляющий более 60% мирового производства. Она ценится за
+                свой мягкий, сбалансированный вкус с богатой ароматической палитрой. Вкус арабики может варьироваться от
+                сладкого и фруктового до цветочного и орехового, в зависимости от места произрастания и обработки.
+                Арабика имеет более высокую кислотность, чем робуста, что придает ей освежающий и яркий вкус. Содержание
+                кофеина в арабике ниже, чем в робусте.</p>
+        </section>
+
+        <!-- Repeat similar structure for robusta, liberica, and excelsa sections -->
+        <section id="robusta" class="mt-4">
+            <h2>Робуста</h2>
+            <img src="images/robusta-beans.jpg" alt="Зерна робусты" class="img-fluid mb-3">
+            <p>Робуста – второй по популярности вид кофе, отличающийся более высоким содержанием кофеина и более
+                интенсивным, терпким вкусом. Она обладает сильным, горьковатым вкусом с землистыми и ореховыми нотами.
+                Робуста менее кислая, чем арабика, и имеет более высокую плотность, что делает ее идеальной для эспрессо
+                и напитков, требующих насыщенного вкуса. Благодаря высокому содержанию кофеина, робуста придает напиткам
+                бодрящий эффект.</p>
+        </section>
+
+        <section id="liberica" class="mt-4">
+            <h2>Либерика</h2>
+            <img src="images/liberica-beans.jpg" alt="Зерна либерики" class="img-fluid mb-3">
+            <p>Либерика – менее распространенный вид кофе, чем арабика и робуста. Она имеет уникальный, сильный аромат с
+                дымными и фруктовыми нотами. Вкус либерики часто описывают как пряный, с оттенками табака и шоколада.
+                Либерика имеет более низкое содержание кофеина, чем робуста, и обладает более резким, интенсивным
+                вкусом.</p>
+        </section>
+
+        <section id="excelsa" class="mt-4">
+            <h2>Эксельса</h2>
+            <img src="images/excelsa-beans.jpg" alt="Зерна эксельсы" class="img-fluid mb-3">
+            <p>Эксельса – редкий вид кофе, который часто путают с либерикой из-за схожести во вкусе и аромате. Она
+                обладает сложным вкусом с фруктовыми и цветочными нотами, а также легкой кислинкой. Эксельса имеет
+                среднее содержание кофеина и часто используется в смесях для придания им уникальных вкусовых оттенков.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3"> <!-- Bootstrap footer -->
+        <p>&copy; 2024 Мир Кофе</p>
+    </footer>
+
+    <!-- Bootstrap JS (optional, for certain Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

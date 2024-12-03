@@ -1,0 +1,271 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/top-view-coffee-tamper-with-copy-space.jpg');
+    /* Укажите путь к вашему изображению */
+    background-size: cover;
+    /* Изображение будет покрывать весь фон */
+    background-position: center;
+    /* Центрирование изображения */
+    background-repeat: no-repeat;
+    /* Изображение не будет повторяться */
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background: linear-gradient(90deg, #5B3A1D, #321d0a);
+    /* Градиент для навигации */
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* Центрирование текста */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    /* Изменяем на inline для горизонтального расположения */
+    margin: 0 15px;
+    /* Убираем margin-right, чтобы избежать лишнего пространства */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #FFD700;
+    /* Золотистый цвет при наведении */
+}
+
+nav a img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Основные стили */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #8B4513;
+    /* Коричневый цвет */
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    /* Центрирование текста заголовков h3 */
+    color: #8B4513;
+    /* Цвет заголовка, можно настроить по желанию */
+    margin-bottom: 10px;
+    /* Отступ снизу для визуального разделения */
+}
+
+p {
+    text-align: center;
+    /* Центрирование текста в параграфах */
+    margin: 0 0 15px;
+    /* Отступы для параграфов */
+    color: #555;
+    /* Цвет текста, можно настроить по желанию */
+}
+
+ul {
+    list-style-type: disc;
+    /* Маркеры списка - кружочки */
+    padding-left: 20px;
+    /* Отступ слева для маркеров */
+    margin-bottom: 15px;
+    /* Отступ снизу от списка */
+}
+
+ol {
+    list-style-type: decimal;
+    /* Нумерованный список */
+    padding-left: 20px;
+    /* Отступ слева для номеров */
+    margin-bottom: 15px;
+    /* Отступ снизу от списка */
+}
+
+li {
+    margin-bottom: 5px;
+    /* Отступ снизу от элемента списка */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стили для форм */
+form {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #8B4513;
+    /* Коричневый при фокусе */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #8B4513;
+    /* Коричневый цвет для кнопки */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #6f3c10;
+    /* Темнее при наведении */
+    transform: scale(1.05);
+    /* Увеличение кнопки при наведении */
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+    width: calc(33% - 60px);
+    /* 3 товара в ряд с отступами */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Стили для подвала */
+footer {
+    background: linear-gradient(90deg, #5B3A1D, #321d0a);
+    /* Градиент для подвала */
+    color: white;
+    /* Белый цвет текста */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    /* Убираем отступы у параграфа */
+}
+
+.navbar {
+    background-color: #333;
+    /* Dark background */
+}
+
+.navbar .nav-link {
+    color: white;
+    /* White text */
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    background-color: #555;
+    /* Darker background for active and hover */
+    color: white;
+    /* Ensure text remains white on hover */
+}
+
+.navbar-brand img {
+    margin-right: 5px;
+    /* Adjust spacing between image and text */
+}
+
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
