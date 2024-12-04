@@ -1,4 +1,3 @@
-// Данные о товарах (expanded for more variety)
 const products = [
     {
         name: "Кофе Арабика",
@@ -44,7 +43,7 @@ function displayProducts() {
     const productList = document.getElementById('product-list');
     products.forEach(product => {
         const productItem = document.createElement('div');
-        productItem.classList.add('col'); // Bootstrap class for grid layout
+        productItem.classList.add('col');
         productItem.innerHTML = `
             <div class="card h-100">
                 <img src="${product.image}" class="card-img-top" alt="${product.name}">
@@ -52,7 +51,7 @@ function displayProducts() {
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.description}</p>
                     <p class="card-text"><strong>${product.price}</strong></p>
-                    <button class="btn btn-primary add-to-cart">Добавить в корзину</button>
+                    <!--<button class="btn btn-primary add-to-cart">Добавить в корзину</button>-->
                 </div>
             </div>
         `;
