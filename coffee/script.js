@@ -1,4 +1,4 @@
-// Данные о товарах
+// Данные о товарах (expanded for more variety)
 const products = [
     {
         name: "Кофе Арабика",
@@ -36,27 +36,28 @@ const products = [
         price: "480 руб.",
         image: "images/brazilian-coffee.jpg"
     }
+
 ];
 
-// Функция для отображения товаров
+
 function displayProducts() {
     const productList = document.getElementById('product-list');
-    
     products.forEach(product => {
         const productItem = document.createElement('div');
-        productItem.classList.add('product-item');
-        
+        productItem.classList.add('col'); // Bootstrap class for grid layout
         productItem.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <p><strong>${product.price}</strong></p>
-            <button class="add-to-cart">Добавить в корзину</button>
+            <div class="card h-100">
+                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">${product.description}</p>
+                    <p class="card-text"><strong>${product.price}</strong></p>
+                    <button class="btn btn-primary add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
         `;
-        
         productList.appendChild(productItem);
     });
 }
 
-// Запуск функции отображения товаров
 displayProducts();
